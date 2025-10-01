@@ -130,28 +130,6 @@ export const Register: React.FC<RegisterProps> = ({ onBack, onRegister, onSignIn
             </TouchableOpacity>
           </View>
 
-          {/* Divider */}
-          <View className="flex-row items-center my-6">
-            <View className="flex-1 h-[1px] bg-[#B8AFA5] opacity-30" />
-            <Text className="mx-4 text-sm text-[#B8AFA5]">Or continue with</Text>
-            <View className="flex-1 h-[1px] bg-[#B8AFA5] opacity-30" />
-          </View>
-
-          {/* Social Login Buttons */}
-          <View className="flex-row justify-center gap-4 mb-4">
-            <TouchableOpacity className="w-14 h-14 rounded-full bg-white justify-center items-center shadow-md">
-              <Feather name="facebook" size={24} color="#4267B2" />
-            </TouchableOpacity>
-
-            <TouchableOpacity className="w-14 h-14 rounded-full bg-white justify-center items-center shadow-md">
-              <Text className="text-2xl font-bold text-[#4285F4]">G</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity className="w-14 h-14 rounded-full bg-white justify-center items-center shadow-md">
-              <Feather name="github" size={24} color="#2C3E2F" />
-            </TouchableOpacity>
-          </View>
-
           {/* Sign In Link */}
           <View className="flex-row justify-center mt-2 mb-6">
             <Text className="text-[#B8AFA5] text-sm">Already have an account? </Text>
