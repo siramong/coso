@@ -4,7 +4,6 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  SafeAreaView,
   StatusBar,
 } from 'react-native';
 import Feather from '@expo/vector-icons/Entypo';
@@ -22,7 +21,7 @@ export const Login: React.FC<LoginProps> = ({ onBack, onLogin, onSignUp }) => {
   const [rememberMe, setRememberMe] = useState(false);
 
   return (
-    <SafeAreaView className="flex-1 bg-[#FFF8F0]">
+    <View className="flex-1 bg-[#FFF8F0]">
       <StatusBar barStyle="dark-content" />
 
       <View className="flex-1 p-6">
@@ -121,6 +120,6 @@ export const Login: React.FC<LoginProps> = ({ onBack, onLogin, onSignUp }) => {
           </View>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, SafeAreaView, StatusBar } from 'react-native';
+import { View, Text, TouchableOpacity, StatusBar } from 'react-native';
 
 interface WelcomeScreenProps {
   onSignIn: () => void;
@@ -11,7 +11,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   onCreateAccount,
 }) => {
   return (
-    <SafeAreaView className="flex-1 bg-[#6B8E7F]">
+    <View className="flex-1 bg-[#6B8E7F]">
       <StatusBar barStyle="light-content" />
       
       {/* Background Pattern */}
@@ -47,6 +47,6 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
           </TouchableOpacity>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };

@@ -4,7 +4,6 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  SafeAreaView,
   StatusBar,
   ScrollView,
 } from 'react-native';
@@ -26,7 +25,7 @@ export const Register: React.FC<RegisterProps> = ({ onBack, onRegister, onSignIn
   const isValidEmail = email.includes('@') && email.includes('.');
 
   return (
-    <SafeAreaView className="flex-1 bg-[#FFF8F0]">
+    <View className="flex-1 bg-[#FFF8F0]">
       <StatusBar barStyle="dark-content" />
 
       <ScrollView className="flex-1 p-6" showsVerticalScrollIndicator={false}>
@@ -162,6 +161,6 @@ export const Register: React.FC<RegisterProps> = ({ onBack, onRegister, onSignIn
           </View>
         </View>
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 };
